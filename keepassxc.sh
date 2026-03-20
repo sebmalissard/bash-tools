@@ -76,6 +76,12 @@ keepassxc_get_password()
     keepassxc_get_attribute "${entry}" "Password"
 }
 
+keepassxc_get_url()
+{
+    entry="${1}"
+    keepassxc_get_attribute "${entry}" "URL"
+}
+
 keepassxc_get_attribute()
 {
     entry="${1}"
